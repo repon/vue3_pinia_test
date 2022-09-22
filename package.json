@@ -9,10 +9,14 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@vueuse/core": "^9.2.0",
     "pinia": "^2.0.22",
+    "pinia-plugin-persistedstate": "^2.2.0",
     "vue": "^3.2.38"
   },
   "devDependencies": {
+    "@pinia/testing": "^0.0.14",
+    "@testing-library/vue": "^6.6.1",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitest/coverage-c8": "^0.23.4",
     "vite": "^3.0.9",

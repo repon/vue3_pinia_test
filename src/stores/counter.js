@@ -18,6 +18,25 @@ export const useCounterOptionStore = defineStore("o_counter", {
   },
 });
 
+export const useCounterOptionExternalStore = defineStore("ox_counter", {
+  state: () => ({
+    count: 0,
+    name: "Joe",
+  }),
+  getters: {
+    doubleCount: (state) => state.count * 2,
+  },
+  actions: {
+    increment() {
+      this.count++;
+    },
+    decrement() {
+      this.count--;
+    },
+  },
+  persist: true,
+});
+
 export const useCounterSetupStore = defineStore("s_counter", () => {
   const count = ref(0);
   const name = ref("Joe");

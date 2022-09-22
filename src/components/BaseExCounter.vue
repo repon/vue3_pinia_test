@@ -1,6 +1,6 @@
 <script setup>
-import { useCounterOptionStore } from "../stores/counter";
-const counter = useCounterOptionStore()
+import { useCounterOptionExternalStore } from "../stores/counter";
+const counter = useCounterOptionExternalStore()
 </script>
 
 <template>
